@@ -70,7 +70,7 @@ export default function WeatherAtmosphere({ theme }) {
       )}
 
       {/* Floating Cloud Silhouettes */}
-      {theme === 'cloudy' && (
+      {(theme === 'cloudy' || theme === 'partly-cloudy') && (
         <div className="cloud-container">
           <div className="cloud-shape cloud-1" />
           <div className="cloud-shape cloud-2" />
@@ -81,7 +81,7 @@ export default function WeatherAtmosphere({ theme }) {
       {theme === 'clear-day' && <div className="sun-glow-bg" />}
 
       {/* Clear Night Star Ambient */}
-      {theme === 'clear-night' && <div className="night-stars-bg" />}
+      {(theme === 'clear-night' || theme === 'night') && <div className="night-stars-bg" />}
     </div>
   );
 }

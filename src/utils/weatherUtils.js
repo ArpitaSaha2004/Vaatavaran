@@ -39,7 +39,7 @@ export function getWeatherCondition(code, isDay = true) {
       return {
         label: 'Partly Cloudy',
         icon: isDay ? CloudSun : CloudMoon,
-        theme: 'cloudy',
+        theme: 'partly-cloudy',
       };
     case 3:
       return {

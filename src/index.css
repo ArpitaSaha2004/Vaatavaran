@@ -1,135 +1,141 @@
-/* Reset & Base Variables - Eye-Friendly Soft Palette */
+/* Reset & Base Variables - Soothing Midnight & Muted Steel Palette */
 :root {
-  --bg-main: #0a0d14;
-  --bg-surface: #111622;
-  --bg-surface-hover: #171e2e;
-  --border-color: #1e2636;
-  --border-focus: #475569;
-  --text-primary: #e2e8f0;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --accent-blue: #60a5fa;
-  --accent-blue-hover: #3b82f6;
-  --danger-color: #f87171;
-  --danger-bg: rgba(248, 113, 113, 0.08);
+  --bg-main: #0b131f;
+  --bg-surface: #131f30;
+  --bg-surface-secondary: #1b2a3f;
+  --bg-surface-hover: #22344d;
+  --border-color: rgba(155, 176, 199, 0.16);
+  --border-focus: #5e8cb9;
+  --text-primary: #eaeff5;
+  --text-secondary: #9bb0c7;
+  --text-muted: #6b829b;
+  --accent-blue: #5e8cb9;
+  --accent-blue-hover: #4a749e;
+  --danger-color: #d9534f;
+  --danger-bg: rgba(217, 83, 79, 0.1);
   --radius-sm: 8px;
   --radius-md: 12px;
   --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-
-/* CLEAR DAY - warm muted amber */
-
+/* 1. CLEAR / SUNNY - Soothing Muted Sage Slate */
 body[data-theme="clear-day"] {
-  --bg-main: #0b0e10;
-
-  --bg-surface: #171615;
-
-  --bg-surface-hover: #201e1b;
-
-  --border-color: #302c27;
-
-  --border-focus: #51483e;
-
-  --accent-blue: #9a7650;
-
-  --accent-blue-hover: #aa845b;
-
-  --text-primary: #d8d3ca;
-
-  --text-secondary: #a99e8f;
-
-  --text-muted: #746d64;
+  --bg-main: #171B1B;
+  --bg-surface: #202626;
+  --bg-surface-secondary: #28302F;
+  --bg-surface-hover: #2F3938;
+  --border-color: rgba(180, 200, 200, 0.12);
+  --border-focus: #849B90;
+  --text-primary: #E8ECEA;
+  --text-secondary: #AAB4B1;
+  --text-muted: #73807D;
+  --accent-blue: #849B90;
+  --accent-blue-hover: #6E857A;
 }
 
-/* CLOUDY - neutral slate */
+/* 2. PARTLY CLOUDY */
+body[data-theme="partly-cloudy"] {
+  --bg-main: #182023;
+  --bg-surface: #222C2F;
+  --bg-surface-secondary: #2B373A;
+  --bg-surface-hover: #324044;
+  --border-color: rgba(180, 200, 200, 0.12);
+  --border-focus: #91AEB4;
+  --text-primary: #E6EBEA;
+  --text-secondary: #AAB7B9;
+  --text-muted: #748386;
+  --accent-blue: #91AEB4;
+  --accent-blue-hover: #79979D;
+}
+
+/* 3. CLOUDY / OVERCAST */
 body[data-theme="cloudy"] {
-  --bg-main: #0f1217;
-  --bg-surface: #161b23;
-  --bg-surface-hover: #1e2530;
-
-  --border-color: #2b333e;
-  --border-focus: #46515e;
-
-  --accent-blue: #8fa0b2;
-  --accent-blue-hover: #a6b4c2;
-
-  --text-primary: #e1e6eb;
-  --text-secondary: #aab4bf;
-  --text-muted: #737f8b;
+  --bg-main: #171C1E;
+  --bg-surface: #22282A;
+  --bg-surface-secondary: #2B3234;
+  --bg-surface-hover: #323A3D;
+  --border-color: rgba(180, 200, 200, 0.12);
+  --border-focus: #89999C;
+  --text-primary: #E2E7E7;
+  --text-secondary: #A6AFB0;
+  --text-muted: #707E82;
+  --accent-blue: #89999C;
+  --accent-blue-hover: #728285;
 }
 
-
-/* RAIN - muted blue */
+/* 4. RAIN */
 body[data-theme="rain"] {
-  --bg-main: #080d16;
-  --bg-surface: #0e1624;
-  --bg-surface-hover: #152034;
-
-  --border-color: #26364a;
-  --border-focus: #40556d;
-
-  --accent-blue: #78a4c8;
-  --accent-blue-hover: #8fb6d7;
-
-  --text-primary: #e1e8ef;
-  --text-secondary: #a5b8ca;
-  --text-muted: #708396;
+  --bg-main: #10191D;
+  --bg-surface: rgba(25, 38, 43, 0.82);
+  --bg-surface-secondary: rgba(32, 48, 53, 0.82);
+  --bg-surface-hover: rgba(39, 58, 64, 0.88);
+  --border-color: rgba(180, 200, 200, 0.14);
+  --border-focus: #789DA8;
+  --text-primary: #E5EBEC;
+  --text-secondary: #9EAFB3;
+  --text-muted: #6E8186;
+  --accent-blue: #789DA8;
+  --accent-blue-hover: #618590;
 }
 
-
-/* SNOW - soft icy blue */
-body[data-theme="snow"] {
-  --bg-main: #091019;
-  --bg-surface: #101a28;
-  --bg-surface-hover: #17263a;
-
-  --border-color: #28394c;
-  --border-focus: #43566b;
-
-  --accent-blue: #91bfd3;
-  --accent-blue-hover: #a8cddd;
-
-  --text-primary: #e5ebef;
-  --text-secondary: #aec0cc;
-  --text-muted: #758896;
-}
-
-
-/* THUNDERSTORM - neutral charcoal/slate
- */
+/* 5. THUNDERSTORM */
 body[data-theme="thunderstorm"] {
-  --bg-main: #0d1117;
-  --bg-surface: #151a21;
-  --bg-surface-hover: #1c232c;
-
-  --border-color: #2b333d;
-  --border-focus: #46515c;
-
-  --accent-blue: #91a2b2;
-  --accent-blue-hover: #a8b6c3;
-
-  --text-primary: #e1e5e9;
-  --text-secondary: #a8b2bc;
-  --text-muted: #737e89;
+  --bg-main: #0D1519;
+  --bg-surface: rgba(22, 32, 37, 0.86);
+  --bg-surface-secondary: rgba(29, 41, 46, 0.84);
+  --bg-surface-hover: rgba(36, 51, 57, 0.9);
+  --border-color: rgba(180, 200, 200, 0.14);
+  --border-focus: #829CA5;
+  --text-primary: #E2E7E8;
+  --text-secondary: #98A7AA;
+  --text-muted: #6C7C80;
+  --accent-blue: #829CA5;
+  --accent-blue-hover: #6B848D;
 }
 
+/* 6. SNOW */
+body[data-theme="snow"] {
+  --bg-main: #111A1F;
+  --bg-surface: rgba(27, 39, 45, 0.82);
+  --bg-surface-secondary: rgba(35, 49, 56, 0.82);
+  --bg-surface-hover: rgba(43, 59, 68, 0.88);
+  --border-color: rgba(180, 200, 200, 0.14);
+  --border-focus: #9EB8C0;
+  --text-primary: #E8EEEE;
+  --text-secondary: #A9B8BC;
+  --text-muted: #738489;
+  --accent-blue: #9EB8C0;
+  --accent-blue-hover: #83A0A8;
+}
 
-/* FOG - soft grey */
+/* 7. FOG / MIST */
 body[data-theme="fog"] {
-  --bg-main: #0d1014;
-  --bg-surface: #141920;
-  --bg-surface-hover: #1d232c;
+  --bg-main: #171D1D;
+  --bg-surface: rgba(35, 42, 41, 0.82);
+  --bg-surface-secondary: rgba(43, 51, 50, 0.8);
+  --bg-surface-hover: rgba(52, 61, 60, 0.88);
+  --border-color: rgba(180, 200, 200, 0.14);
+  --border-focus: #9AA8A4;
+  --text-primary: #E1E6E4;
+  --text-secondary: #A5AEAC;
+  --text-muted: #727B7A;
+  --accent-blue: #9AA8A4;
+  --accent-blue-hover: #80908C;
+}
 
-  --border-color: #2a323c;
-  --border-focus: #444f5b;
-
-  --accent-blue: #98a5b2;
-  --accent-blue-hover: #adb8c2;
-
-  --text-primary: #e0e4e8;
-  --text-secondary: #a9b1b9;
-  --text-muted: #747d86;
+/* 8. NIGHT */
+body[data-theme="clear-night"], body[data-theme="night"] {
+  --bg-main: #0B1216;
+  --bg-surface: rgba(18, 28, 33, 0.86);
+  --bg-surface-secondary: rgba(25, 37, 43, 0.84);
+  --bg-surface-hover: rgba(32, 47, 54, 0.9);
+  --border-color: rgba(180, 200, 200, 0.12);
+  --border-focus: #839CA5;
+  --text-primary: #E4E9EA;
+  --text-secondary: #96A3A7;
+  --text-muted: #6A777B;
+  --accent-blue: #839CA5;
+  --accent-blue-hover: #6C848D;
 }
 
 
@@ -530,6 +536,7 @@ input {
 
 .btn-primary-search:hover {
   background-color: var(--accent-blue-hover);
+  color: #ffffff;
 }
 
 .location-action-row {
@@ -1030,7 +1037,7 @@ input {
   align-items: flex-start;
   gap: 0.55rem;
   padding: 0.65rem 0.75rem;
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   width: 100%;
@@ -1098,7 +1105,7 @@ input {
   flex-direction: column;
   align-items: center;
   padding: 0.55rem 0.35rem;
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   text-align: center;
@@ -1307,7 +1314,7 @@ input {
   position: relative;
   height: 8px;
   border-radius: 4px;
-  background: linear-gradient(to right, #22c55e, #eab308, #f97316, #ef4444, #a855f7, #881337);
+  background: linear-gradient(to right, #48bb78, #d69e2e, #dd6b20, #e53e3e, #9b2c2c);
   width: 100%;
 }
 
@@ -1317,7 +1324,7 @@ input {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--text-primary);
   transform: translateX(-50%);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
@@ -1334,7 +1341,7 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 0.35rem 0.45rem;
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   font-size: 0.72rem;
@@ -1355,7 +1362,7 @@ input {
   align-items: flex-start;
   gap: 0.4rem;
   padding: 0.55rem 0.65rem;
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   width: 100%;
@@ -1442,7 +1449,7 @@ input {
 
 .sun-icon-box {
   padding: 0.4rem;
-  background-color: var(--bg-main);
+  background-color: var(--bg-surface-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   color: var(--accent-blue);
